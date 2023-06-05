@@ -9,9 +9,12 @@
 + [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
 
 ### Tasks
-+ Task 0: [Run Python file](): A Shell script that runs a Python script.
++ Task 0: [Run Python file](https://github.com/Hiluhree/alx-higher_level_programming/blob/master/0x00-python-hello_world/0-run): A Shell script that runs a Python script.
 
 	- The Python file name will be saved in the environment variable ``$PYFILE``
-+ Task 1: [Run inline](): A Shell script that runs Python code.
++ Task 1: [Run inline](https://github.com/Hiluhree/alx-higher_level_programming/blob/master/0x00-python-hello_world/1-run_inline): A Shell script that runs Python code.
 
 	- The Python code will be saved in the environment variable ``$PYCODE``
++ Task 2: [Hello, print](): A Python script that prints exactly ``"Programming is like building a multilingual puzzle, followed by a new line``.
+
+	- Use the function ``print``
