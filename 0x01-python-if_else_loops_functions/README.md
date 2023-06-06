@@ -10,7 +10,7 @@ In this project, I started utilizing conditionals and loops in Python by using `
 + [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
 
 ### Tasks
-1. ####  0. Positive anything is better than negative nothing
+####  0. Positive anything is better than negative nothing
 + [0-positive_or_negative.py](https://github.com/Hiluhree/alx-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/0-positive_or_negative.py): This program will assign a random signed ``number`` to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable ``number`` is positive or negative.
 
 + You can find the source code [here](https://github.com/alx-tools/0x01.py/blob/master/0-positive_or_negative_py)
