@@ -6,7 +6,7 @@
 
 ### Tasks
 #### 0. Import a simple function from a simple file
-program that imports the function ``def add(a, b):`` from the file ``add_0.py`` and prints the result of the addition ``1 + 2 = 3``
++ [0-add.py] (https://github.com/Hiluhree/alx-higher_level_programming/blob/master/0x02-python-import_modules/0-add.py): Python program that imports the function ``def add(a, b):`` from the file ``add_0.py`` and prints the result of the addition ``1 + 2 = 3``
 
 	+ You have to use ``print`` function with string format to display integers
 	+ You have to assign:
