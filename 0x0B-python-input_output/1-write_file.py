@@ -4,9 +4,13 @@
 
 
 def write_file(filename="", text=""):
-    """Return the number of lines in a text file."""
-    lines = 0
-    with open(filename) as fn:
-        for line in fn:
-            lines += 1
-        return lines
+    """Write a string to a UTF8 text file.
+
+    Args:
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
+    Returns:
+        The number of characters written.
+    """
+    with open(filename, "w",  encoding="utf-8") as fn:
+        return fn.write(text)
