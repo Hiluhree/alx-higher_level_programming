@@ -139,7 +139,7 @@ class Rectangle:
                         self.height = v
                     elif k == "x":
                         self.x = v
-                    slif k == "y":
+                    elif k == "y":
                         self.y = v
 
         def to_dictionary(self):
