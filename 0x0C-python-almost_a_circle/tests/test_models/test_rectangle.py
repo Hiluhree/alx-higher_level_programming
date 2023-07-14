@@ -63,15 +63,15 @@ class TestRectangle_instantiation(unittest.TestCase):
 
     def test_height_private(self):
         with self.assertRaises(AttributeError):
-OBOBOB            print(Rectangle(5, 5, 0, 0, 1).__height)
+            print(Rectangle(5, 5, 0, 0, 1).__height)
 
-OBOBOB    def test_x_private(self):
-OBOBOB        with self.assertRaises(AttributeError):
-OBOBOB            print(Rectangle(5, 5, 0, 0, 1).__x)
+    def test_x_private(self):
+        with self.assertRaises(AttributeError):
+            print(Rectangle(5, 5, 0, 0, 1).__x)
 
     def test_y_private(self):
-OBOBOB        with self.assertRaises(AttributeError):
-OBOBOB            print(Rectangle(5, 5, 0, 0, 1).__y)
+        with self.assertRaises(AttributeError):
+            print(Rectangle(5, 5, 0, 0, 1).__y)
 
     def test_width_getter(self):
         r = Rectangle(5, 7, 7, 5, 1)
@@ -151,17 +151,17 @@ class TestRectangle_width(unittest.TestCase):
 
     def test_frozenset_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
-OAOAOA            Rectangle(frozenset({1, 2, 3, 1}), 2)
+            Rectangle(frozenset({1, 2, 3, 1}), 2)
 
     def test_range_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle(range(5), 2)
-OAOAOA
-OAOAOAOAOAOA    def test_bytes_width(self):
-OAOAOA        with self.assertRaisesRegex(TypeError, "width must be an integer"):
-OAOAOA            Rectangle(b'Python', 2)
 
-OAOAOA    def test_bytearray_width(self):
+    def test_bytes_width(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            Rectangle(b'Python', 2)
+
+    def test_bytearray_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle(bytearray(b'abcdefg'), 2)
 
@@ -248,12 +248,12 @@ class TestRectangle_height(unittest.TestCase):
     def test_nan_height(self):
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
             Rectangle(1, float('nan'))
-OBOBOB
-    def test_negative_height(self):
-OBOBOB        with self.assertRaisesRegex(ValueError, "height must be > 0"):
-OBOBOBOBOBOB            Rectangle(1, -1)
 
-OBOBOB    def test_zero_height(self):
+    def test_negative_height(self):
+        with self.assertRaisesRegex(ValueError, "height must be > 0"):
+            Rectangle(1, -1)
+
+    def test_zero_height(self):
         with self.assertRaisesRegex(ValueError, "height must be > 0"):
             Rectangle(1, 0)
 
@@ -419,8 +419,8 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
 
     def test_height_before_y(self):
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
-            Rectangle(1, "invalid height", 2, "invalid y")
-OBOBOB
+            Rectangle(1, "invalid height", 2, "invalid y"
+
     def test_x_before_y(self):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Rectangle(1, 2, "invalid x", "invalid y")
