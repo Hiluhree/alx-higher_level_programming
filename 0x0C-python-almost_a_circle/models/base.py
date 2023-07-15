@@ -84,7 +84,7 @@ class Base:
             new.update(**dictionary)
             return new
 
-    @classmwthod
+    @classmethod
     def load_from_file(cls):
         """Return a list of classes instantiated from a file of JSON strings.
 
